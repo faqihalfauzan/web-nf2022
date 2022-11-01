@@ -1,0 +1,50 @@
+body{
+    background-color: beige;
+}
+div>h1{
+    color: blue;
+}
+blockquote{
+    background-color: rgb(211, 211, 41);
+}
+#header{
+    background-color: rgb(211, 182, 85);
+    text-align: center;
+}
+
+.B{
+    display: inline;
+    color: blue;
+    font-size: 50px;
+}
+.gambar{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.koleksi{
+    background-color: beige;
+}
+.koleksi img{
+    width: 23%;
+}
+
+.promo{
+    margin: auto;
+    width: 50%;
+}
+
+.promo h2{
+    text-align: center;
+    color: red;
+}
+
+.promo h3{
+    background-color: aqua;
+    border: 5px solid beige;
+    text-align: center;
+    font-weight: bold;
+    color: blue;
+}
