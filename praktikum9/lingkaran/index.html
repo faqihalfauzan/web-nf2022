@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Lingkaran</title>
+    <script>
+        function calc() {
+            const phi =3.14;
+            let jariJari= document.getElementById("r").Value;
+            let luas = phi * jariJari ** 2;
+            let keliling = 2 * phi * jariJari;
+
+            let output = document.getElementById("hasil");
+            output.value ="luas :" +luas+"\n"+"keliling :" +keliling;
+        }
+    </script>
+</head>
+<body>
+    <h1>Menghitung luas dan Keliling Lingkaran</h1>
+    <p>Luas = phi * r^2</p>
+    <p>Keliling = 2*phi*r</p>
+    <table>
+        <tr>
+            <td><label for="r">Jari-jari</label></td>
+            <td><input type="number" id="r"></td>
+            <td><button onclick="calc()">Hitung</button></td>
+        </tr>
+        <tr>
+            <td><label for="hasil">Hasil</label></td>
+            <td><textarea name="hasil" cols="21" rows="5"></textarea></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <script>
+        const phi =3.14;
+        let r =14;
+        let l = phi*(r**2);
+        let k = phi*(2*r);
+        
+        document.getElementById("phi").innerHTML="Phi :" + phi;
+        document.getElementById("jari").innerHTML="Jari-jari :" +r;
+        document.getElementById("luas").innerHTML="Luas Lingkaran :"+l;
+        document.getElementById("keliling").innerHTML="Keliling Lingkaran :"+k;
+    </script>
+</body>
+</html>
