@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> Form Validation </title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+	<div class="header">
+		<h2>Pendaftaran</h2>
+	</div>
+	<form id="form" class="form">
+		<div class="form-control">
+			<label for="username">Nama Pelanggan</label>
+			<input type="text" placeholder="---Maximal 30 Character---" id="username" maxlength="30"/>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="username">Email</label>
+			<input type="email" placeholder="..........@gmail.com" id="email" />
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="username">Jam Keberangkatan</label>
+			<input type="time" placeholder="Jam Keberangkatan" id="jam"/>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="username">Tujuan Keberangkatan</label>
+			<input type="text" placeholder="Tujuan Keberangkatan" id="tujuan"/>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+			
+		</div>
+		<div class="form-control">
+			<label for="username">Jumlah Tiket</label>
+			<input type="number" placeholder="jumlah tiket" id="jumlah" max="10" min="1"/>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		<button>Submit</button>
+	</form>
+</div>
+
+
+
+  <script  src="./script.js"></script>
+
+</body>
+</html>
